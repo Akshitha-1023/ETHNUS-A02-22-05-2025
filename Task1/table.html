@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        /* First Table - Standard Blue */
+        .standard-table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 500px;
+            margin: 20px 0;
+            border: 2px solid #4472C4;
+        }
+        .standard-table th {
+            background-color: #4472C4;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #2F5597;
+        }
+        .standard-table td {
+            background-color: #D9E2F3;
+            padding: 10px;
+            border: 1px solid #2F5597;
+        }
+        
+        /* Second Table Container */
+        .table-container {
+            display: inline-block;
+            border: 1px solid #4472C4;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 500px;
+        }
+        .table-heading {
+            background-color: #4472C4;
+            color: white;
+            padding: 8px 12px;
+            font-weight: bold;
+        }
+        .second-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .second-table th, .second-table td {
+            padding: 8px 12px;
+            text-align: left;
+            border: 1px solid #4472C4;
+        }
+        .second-table th {
+            background-color: #D9E2F3;
+            font-weight: bold;
+        }
+        .second-table td {
+            background-color: white;
+        }
+        
+        /* Bullet Points */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 20px 0;
+        }
+        li {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #4472C4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table-Task</h1>
+    
+    <!-- First Standard Table -->
+    <table class="standard-table">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+    
+    <!-- Bullet Points -->
+    <ul>
+        <li><strong>Firstname</strong></li>
+        <li><strong>Lastname</strong></li>
+        <li><strong>Age</strong></li>
+    </ul>
+    
+    <!-- Second Table with Heading Above -->
+    <div class="table-container">
+        <div class="table-heading">Firstname</div>
+        <table class="second-table">
+            <tr>
+                <th></th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
