@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.5;
+        }
+        .box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .first-box {
+            width: 80%;
+        }
+        .second-box {
+            width: 90%;
+        }
+        .link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- First Box -->
+    <div class="box first-box">
+        <div>Click any of the following links:</div>
+        <div>
+            <span class="link">Opens in New</span> | 
+            <span class="link">Opens in Self</span> | 
+            <span class="link">Opens in Parent</span> | 
+            <span class="link">Opens in Body</span>
+        </div>
+    </div>
+
+    <!-- Second Box (with gap) -->
+    <div class="box second-box">
+        <div class="bold">Link to an email address</div>
+        <div>To create a link that opens in the user's email program to let them send a new email, use <code>mailto:</code> inside the attribute:</div>
+        <div class="link">Send Email</div>
+    </div>
+</body>
+</html>
