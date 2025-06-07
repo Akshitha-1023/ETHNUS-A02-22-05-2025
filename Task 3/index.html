@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested List Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .square-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 300px; /* Square-ish shape */
+            border-radius: 5px;
+        }
+        ul.outer-list {
+            list-style-type: disc; /* Filled round bullet */
+            padding-left: 20px;
+        }
+        ul.inner-list {
+            list-style-type: circle; /* Unfilled round bullet */
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="square-box">
+        <div>Lists can be nested (list inside list):</div>
+        <ul class="outer-list">
+            <li>Coffee</li>
+            <li>Tea
+                <ul class="inner-list">
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+    </div>
+</body>
+</html>
